@@ -32,6 +32,18 @@ footer {
 }
 
 /*Comum*/
+h1{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    
+}
+
+h2{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+
+}
+
 a {
     text-decoration: none;
 }
@@ -57,4 +69,39 @@ a.brand {
 }
 .row.center {
     justify-content: center;
+}
+
+/* Imagem */
+img {
+    border-radius: 0.5rem;
+}
+img.media{
+    max-width: 29rem;
+    width: 100%;
+}
+
+/* card */
+.card{
+    border: 01rem #c0c0c0 solid;
+    background-color: #f8f8f8;
+    border-radius: 0.5rem;
+    margin: 0.1rem;
+}
+
+.card-body{
+    padding: 1rem;
+}
+
+.card-body > * {
+    margin-bottom: 0.5rem;
+}
+
+.preco{
+    font-size: 2rem;
+}
+
+/* avaliacao */
+.avaliacao span {
+    color: #f0c040;
+    margin: 0.1rem;
 }
