@@ -111,3 +111,7 @@ img.media{
   color: #f0c040;
   margin: 0.1rem;
 }
+
+.avaliacao span:last-child{
+  color: #040404;
+}
