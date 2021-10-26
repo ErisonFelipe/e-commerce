@@ -1,9 +1,11 @@
 import React from "react";
-import data from './data';
-import Produto from "./components/produtos";
+import { BrowserRouter, Route } from 'react-router-dom';
+import HomeScreen  from "./screen/HomeScreen";
+import ProductScreen from "./screen/ProductScreen";
 
 function App() {
   return (
+    <BrowserRouter>
     <div class="grid-container">
     <header class="row">
         <div>
@@ -15,17 +17,15 @@ function App() {
         </div>
     </header>
     <main>
-        <div class="row center">
-            {data.produtos.map((produto) => (
-              <Produto key={produto._id} produto={produto}></Produto> 
-                ))
-            }                     
-            </div>            
+      <Route path="/produto/:id" component={ProductScreen} exact></Route>
+      <Route path="/" component={HomeScreen} exact></Route>
+                  
     </main>
     <footer class="row center">
         Todos direitos reservados
     </footer>
 </div>
+</BrowserRouter>
   );
 }
 
