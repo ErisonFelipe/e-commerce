@@ -75,6 +75,9 @@ button{
   background-color: #f8f8f8;
   cursor: pointer;
 }
+button:houver{
+  border: 0.1rem #404040 solid;
+}
 button.primary{
   background-color: #f0c040;
 }
@@ -117,6 +120,9 @@ img {
 }
 img.media{
   max-width: 29rem;
+  width: 100%;
+}
+img.large{
   width: 100%;
 }
 
